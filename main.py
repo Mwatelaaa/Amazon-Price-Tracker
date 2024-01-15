@@ -11,8 +11,7 @@ PASSWORD = os.environ["PASSWORD"]
 sender_email = os.environ["sender_email"]
 
 # Product to Track.
-URL = ("https://www.amazon.com/Apple-iPhone-14-128GB-Midnight/dp/B0BN733951/ref=sr_1_2?crid=3HF4UCBWKEO52&keywords="
-       "iphone%2B14&qid=1705316253&sprefix=iPhone%2Caps%2C2178&sr=8-2&th=1")
+URL = "AMAZON URL TO KEEP TRACK OFF"
 
 # MY HTTP  HEADER
 headers = {
