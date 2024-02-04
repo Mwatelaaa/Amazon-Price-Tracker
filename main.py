@@ -32,15 +32,12 @@ headers = {
 response = requests.get(url=URL, headers=headers)
 response.raise_for_status()
 website = response.text
-# print(website)
 
 soup = BeautifulSoup(website, "lxml")
-# print(soup.prettify())
 
 price = soup.find(class_="a-offscreen").get_text()
 price_without_currency = price.split("$")[1]
 price_as_float = float(price_without_currency)
-# print(price_as_float)
 
 title = soup.find(id="productTitle").get_text().strip()
 
