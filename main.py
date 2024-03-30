@@ -53,3 +53,5 @@ if price_as_float < BUY_PRICE:
             to_addrs=sender_email,
             msg=f"Subject:Amazon Price Alert!\n\n{message}\n{URL}".encode("utf-8")
         )
+
+
