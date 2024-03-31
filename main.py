@@ -36,7 +36,9 @@ website = response.text
 soup = BeautifulSoup(website, "lxml")
 
 price = soup.find(class_="a-offscreen").get_text()
+
 price_without_currency = price.split("$")[1]
+
 price_as_float = float(price_without_currency)
 
 title = soup.find(id="productTitle").get_text().strip()
